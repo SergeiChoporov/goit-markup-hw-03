@@ -17,6 +17,12 @@ body {
   letter-spacing: 0.03em;
 }
 
+.link {
+   display: block;
+	max-width: 100%;
+	height: auto;
+}
+
 .list-service,
 .list,
 .footer-list,
@@ -26,7 +32,11 @@ body {
   list-style: none;
 }
 
-.section {
+.section-hero,
+.section-work,
+.section-about,
+.section-team,
+.section-portfolio {
   margin: 0 auto;
   padding-top: 94px;
   padding-bottom: 94px;
@@ -43,7 +53,7 @@ body {
 
 .feature-list {
   display: flex;
-  margin-top: 94px;
+  margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
 }
@@ -80,11 +90,6 @@ body {
 .nav-contacts {
   display: inline-block;
 }
-/**.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-bottom: 90px;
-}**/
 
 .section-title {
   text-align: center;
@@ -170,6 +175,12 @@ span {
   padding: 0;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
 .nav-link,
 .contact-link {
   color: var(--text-color-black);
@@ -201,9 +212,25 @@ span {
   margin-right: 50px;
 }
 
-
 .nav-item {
+  margin-right: 50px;
+}
+
+.auth-nav .nav-item:last-child {
   margin-right: 0;
+}
+
+.auth-nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.auth-nav .contact-link {
+  margin-left: 0;
 }
 
 .items {
@@ -219,21 +246,9 @@ span {
 }
 
 .site-nav .contact-link {
-  margin-right: 50px;
+  margin-right: 0;
 }
 
-.auth-nav {
-  margin-left: 275px;
-  display: flex;
-  align-items: center;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
-.auth-nav .contact-link {
-  margin-left: 50px;
-}
 
 .team-name {
   color: var(--text-color-black);
@@ -262,11 +277,11 @@ span {
 }
 
 .wrapper {
-   padding: 20px 24px;
-   border: 1px solid #eeeeee;
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 
-.hero {
+.section-hero {
   padding: 200px 0;
   text-align: center;
   background-color: #2f303a;
@@ -290,7 +305,8 @@ span {
 /**особенности**/
 
 .feature-item {
-  width: 290px;
+  width: 270px;
+  margin-right: 30px;
 }
 
 .feature-title {
@@ -311,16 +327,6 @@ span {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-
-/**Work**/
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0;
-}
-
-/**команда**/
 
 .list-service-team {
   display: flex;
@@ -357,7 +363,6 @@ span {
 }
 
 .flex-portfolio {
- 
 }
 
 .flex-portfolio:nth-child(3n) {
@@ -390,10 +395,6 @@ span {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--color-white);
-}
-
-.accent {
-  color: var;
 }
 
 .footer-contacts {
@@ -455,3 +456,5 @@ span {
   padding: 0;
   margin: 0;
 }
+
+
