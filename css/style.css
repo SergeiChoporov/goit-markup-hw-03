@@ -304,6 +304,10 @@ img {
   margin-bottom: 12px;
 }
 
+.portfolio-item {
+  flex-basis: calc((100% - 2 * 30px) /3);
+}
+
 /*footer*/
 .footer {
   padding-top: 60px;
